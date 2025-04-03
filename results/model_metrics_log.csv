@@ -1,0 +1,7 @@
+Model,Parameters,Exogenous_Features,MAE,RMSE,R2_Score,Notes
+ARIMA,"(1,1,1)",,338.06983904181084,395.3722936910703,-2.1339118133702346,Univariate ARIMA on Adj_Close
+SARIMA,"(1,1,1)x(1,1,1,12)",,299.5134945191544,349.1884165759297,-1.444522080396407,Univariate SARIMA with annual seasonality
+ARIMAX,"(1,1,1)","USD_Index, CPI, Yield_10Y, headline_count, avg_sentiment",372.70464021078993,433.2305691005143,-2.7628117671384422,ARIMAX using SARIMAX(no seasonality)
+SARIMAX,"(1,1,1)x(1,1,1,12)","USD_Index, CPI, Yield_10Y, avg_sentiment",326.11323070476067,378.9401488086229,-1.8788268841887237,"SARIMAX with CPI, USD, Yield, and Sentiment"
+Prophet,default (daily_seasonality=True),,380.9194277852375,436.1206721580555,-2.8131830387965167,Univariate Prophet
+Prophet,daily_seasonality=True,"USD_Index, CPI, Yield_10Y, headline_count, avg_sentiment",272.18774221756024,318.66970458356985,-1.0358972821072125,Prophet with exogenous features
