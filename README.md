@@ -13,6 +13,10 @@ This project forecasts daily gold prices using multiple modeling strategies — 
 - Create an ensemble model for improved prediction accuracy
 - Forecast gold prices for January to March 2025
 
+## 👥 Authors
+- Russell Han Josef
+- Dev Nguyen
+
 ## 📊 Dependencies
 
 ```bash
